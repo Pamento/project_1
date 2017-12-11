@@ -1,3 +1,34 @@
-h1 {
-  color: rgba(238, 255, 0, 0.397);
+body {
+  margin:0;
+  padding: 0;
+  background-color: #252728;
+}
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+.upOnNavigation {
+  display: flex;
+}
+.logoImage {
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+}
+.upOnNavigation div>p {
+  color: #fff;
+  font-size: 2em;
+}
+
+
+
+
+/* to delet on the :end
+*/
+.hellofoto {
+  width: 100%;
+}
+.hellofoto>img {
+  display: block;
+  width: 100%;
 }
