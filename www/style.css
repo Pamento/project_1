@@ -146,6 +146,7 @@ nav>ul>li>ul {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #898e90;
   margin-top: 20px;
 }
@@ -154,7 +155,19 @@ nav>ul>li>ul {
   cursor: pointer;
   color: #898e90;  
 }
-
+.footer>div>a {
+  text-align: center;
+  line-height: 35px;
+}
+.footer>div>a>i {
+  align-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #252728;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
 
 
 
