@@ -1,33 +1,48 @@
+html, body {
+  height: 100%;
+}
 body {
+  border-collapse: collapse;
+  box-sizing: border-box;
   margin:0;
   padding: 0;
   background-color: #252728;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-  max-width: 75%;
+  max-width: 80%;
   margin: 0 auto;
 }
+*img {
+  display: block;
+}
+
+
+
+
+
 
 /* espace logo end name */
-.upOnNavigation {
+/*.upOnNavigation*/
+header {
   display: flex;
 }
 .logoImage {
-  margin: 30px;
+  margin: 40px;
   width: 50px;
   height: 50px;
 }
-.upOnNavigation div>p {
+header div>p {
   color: #fff;
   font-size: 2em;
   margin-bottom: 0;
 }
-.upOnNavigation div>a {
+header div>a {
   text-decoration: none;
   color: #898e90;
 }
-.upOnNavigation div:nth-of-type(3)>img {
-  margin-left: 150px;
+header div:nth-of-type(3)>img {
+  margin-left: 125px;
 }
 
 
@@ -38,12 +53,29 @@ body {
 nav {
   display: flex;
   color: #898e90;
+  font-size: 1.3em;
+  font-weight: lighter;
 }
 nav ul {
   list-style-type: none;
+  padding-left: 0;
+  margin: 0 10px 0 5px;
 }
+nav ul li {
+  display: inline-block;
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+  padding: 5px;
+}
+nav ul li:active {
+  color: #fff;
+}  
+nav ul li:hover {
+  color: #fff;
+}  
 nav>ul>li>ul {
-  padding: 0;
+  padding-left: 0;
   display: none;
 }
 
@@ -51,10 +83,76 @@ nav>ul>li>ul {
 
 
 
+
+/* main section with fotos */
+
+.mainContainerImage {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.mainContainerImage>div {
+  width: 200px;
+  margin: 10px;
+  position: relative;
+}
+.mainContainerImage>div>img {
+  width: 100%;
+}  
+.mainContainerImage>div>div {
+  z-index: 2;
+}
+.natureTitre>div {
+  position: absolute;
+  width: 150px;
+  background-color: #177507;
+}
+.paysageTitre>div {
+  position: absolute;
+  width: 150px;
+  background-color: #335676;
+}
+.streetTitre>div {
+  position: absolute;
+  width: 185px;
+  background-color: #de7e00;
+}
+.architectTitre>div {
+  position: absolute;
+  width: 150px;
+  background-color: #153350;
+}
+.objetTitre>div {
+  position: absolute;
+  width: 150px;
+  background-color: #271350;
+}  
+/* .mainContainerImage>div:nth-of-type(2,4) {
+  justify-content: flex-end;
+}   */
+.mainContainerImage>div>div>p {
+  color: #fff;
+  font-size: 2.3em;
+  padding: 15px;
+  margin: 0;
+} 
+
+
+
+
+
+
 /* footer */
-footer>div>a {
-  text-decoration-style: none;
+.footer {
+  display: flex;
+  justify-content: space-between;
   color: #898e90;
+  margin-top: 20px;
+}
+.footer>div>a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #898e90;  
 }
 
 
