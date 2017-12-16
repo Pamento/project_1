@@ -49,7 +49,7 @@ header div:nth-of-type(3)>img {
 
 
 /* navigation */
-nav {
+/* nav {
   display: flex;
   color: #898e90;
   font-size: 1.3em;
@@ -66,6 +66,7 @@ nav ul li {
   width: 120px;
   text-align: center;
   padding: 5px;
+  position: relative;
 }
 nav>ul>li>a {
   text-decoration: none;
@@ -78,14 +79,24 @@ nav>ul>li>ul>li {
   list-style-type: none;
   color: #898e90;
 }
-nav>ul>li>ul {
+/* nav>ul>li>ul {
   display: none;
-  background-color: #252728;
+
   padding-left: 0;
-}
+} */
 nav>ul>li>ul:hover {
   display: block;
-}  
+}
+nav ul .navSecondRow {
+  display: none;
+  background-color: #252728;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+nav ul li:hover .navSecondRow {
+  display: block;
+} */
 
 
 
@@ -107,7 +118,7 @@ nav>ul>li>ul:hover {
 }
 .mainContainerImage>div>img {
   width: 100%;
-}  
+}
 .mainContainerImage>div>div {
   z-index: 2;
   text-align: right;
@@ -155,17 +166,17 @@ nav>ul>li>ul:hover {
   right: 0;
   width: 240px;
   background-color: #271350;
-}  
+}
 .mainContainerImage>div>div>p {
   color: #fff;
   font-size: 2em;
   padding: 20px;
   margin: 0;
-} 
+}
 .mainContainerImage>div>div>p:hover {
   color: #898e90;
   cursor: pointer;
-}  
+}
 
 
 
@@ -182,7 +193,7 @@ nav>ul>li>ul:hover {
 .footer>div>a {
   text-decoration: none;
   cursor: pointer;
-  color: #898e90;  
+  color: #898e90;
 }
 .socialPanel>div>a>i {
   color: #252728;
