@@ -8,6 +8,7 @@ body {
   padding: 0;
   background-color: #252728;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
 }
 .container {
   max-width: 80%;
@@ -45,6 +46,50 @@ header div:nth-of-type(3)>img {
 }
 
 
+/*
+* ==============================
+*   navigation
+* ==============================
+*/
+.zetIndexUp {
+  z-index: 10;
+}
+nav {
+  margin: 0 auto;
+  z-index: 10;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+}
+nav ul li a {
+  border: 1px solid #ccc;
+  background-color: #252728;
+  color: #898e90;
+  cursor: pointer;
+  display: block;
+  line-height: 25px;
+  width: 132px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #fff;
+}
+nav ul li ul {
+  display: none;
+}
+nav ul li:hover .navSecondRow {
+  display: flex;
+  flex-direction: column;
+}
+
+
+nav ul li ul li {
+  border: 1px solid #ccc;
+}
 
 
 
@@ -84,7 +129,7 @@ nav>ul>li>ul>li {
 
   padding-left: 0;
 } */
-nav>ul>li>ul:hover {
+/*nav>ul>li>ul:hover {
   display: block;
 }
 nav ul .navSecondRow {
@@ -96,7 +141,7 @@ nav ul .navSecondRow {
 }
 nav ul li:hover .navSecondRow {
   display: block;
-} */
+}*/
 
 
 
@@ -104,7 +149,10 @@ nav ul li:hover .navSecondRow {
 
 
 /* main section with fotos */
-
+.zetIndexDown {
+  z-index: 0;
+  position: relative;
+}
 .mainContainerImage {
   display: flex;
   flex-direction: row;
