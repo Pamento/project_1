@@ -22,8 +22,9 @@ body {
 
 
 
-
-/* espace logo end name */
+/* ==============================
+* espace logo end name
+* ============================== */
 header {
   display: flex;
 }
@@ -47,11 +48,9 @@ header div:nth-of-type(3)>img {
 }
 
 
-/*
-* ==============================
+/* ==============================
 *   navigation
-* ==============================
-*/
+* ============================== */
 nav {
   margin: 0 auto;
 }
@@ -100,8 +99,9 @@ nav ul>li:nth-of-type(1)>a {
 
 
 
-
-/* main section with fotos */
+/* ==============================
+*   main section with fotos
+* ============================== */
 .mainContainerImage {
   display: flex;
   flex-direction: row;
@@ -179,7 +179,9 @@ nav ul>li:nth-of-type(1)>a {
 
 
 
-/* footer */
+/* ==============================
+*   footer
+* ============================== */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -212,12 +214,40 @@ nav ul>li:nth-of-type(1)>a {
 
 
 
-/* on the :end
-*/
+/* ==============================
+*   ends end others
+* ============================== */
 .hellofoto {
   width: 100%;
 }
 .hellofoto>img {
   display: block;
   width: 100%;
+}
+.updiv {
+  height: 25px;
+  background-color: #00ff00;
+  text-align: right;
+}
+.updiv a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 25px;
+  margin-right: 80px;
+  position: relative;
+}
+.updiv i {
+  /* width: 30px; */
+  height: 30px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  padding: 7px 12px;
+  position: absolute;
+  /* right: 0px; */
+  bottom: 0;
+}
+.updiv .fa {
+  font-weight: bold;
+  font-size: 1.2em;
 }
