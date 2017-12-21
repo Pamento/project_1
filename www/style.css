@@ -102,7 +102,7 @@ nav {
 /* ==============================
 *   main section with fotos
 * ============================== */
-.mainContainerImage {/* ------------------- ul */
+.mainContainerImage {
   display: flex;
   flex-direction: row;
   height: 99vh;
@@ -111,7 +111,6 @@ nav {
   overflow: hidden;
   padding-left: 0px;
 }
-/* .mainContainerImage>li { */
 li[class$=Titre] {
   width: 200px;
   margin: 10px 10px 0px 10px;
