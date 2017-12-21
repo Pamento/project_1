@@ -14,7 +14,7 @@ body {
   max-width: 78%;
   margin: 0 auto;
 }
-*img {
+img {
   display: block;
 }
 
@@ -29,7 +29,7 @@ header {
   display: flex;
 }
 .logoImage {
-  margin: 40px 20px 0px 40px;
+  margin: 40px 20px 0 40px;
   width: 45px;
   height: 45px;
 }
@@ -80,14 +80,14 @@ nav {
   display: none;
 }
 .mainTopNav li .navSecondRow a {
-  padding: 3px 0px;
+  padding: 3px 0;
 }
 .mainTopNav li:hover .navSecondRow {
   display: flex;
   flex-direction: column;
   z-index: 10;
   overflow: hidden;
-  padding-left: 0px;
+  padding-left: 0;
   position: absolute;
 }
 .mainTopNav>li:nth-of-type(1)>a {
@@ -107,13 +107,13 @@ nav {
   flex-direction: row;
   height: 99vh;
   list-style-type: none;
-  margin: 0px;
+  margin: 0;
   overflow: hidden;
   padding-left: 0px;
 }
 li[class$=Titre] {
   width: 200px;
-  margin: 10px 10px 0px 10px;
+  margin: 10px 10px 0 10px;
   position: relative;
 }
 .mainContainerImage img {
