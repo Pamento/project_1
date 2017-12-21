@@ -7,7 +7,7 @@ body {
   margin:0;
   padding: 0;
   background-color: #252728;
-  font-family: font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
 }
 .container {
@@ -102,21 +102,23 @@ nav ul>li:nth-of-type(1)>a {
 /* ==============================
 *   main section with fotos
 * ============================== */
-.mainContainerImage {
+.mainContainerImage {/* ------------------- ul */
   display: flex;
   flex-direction: row;
-  height: 105vh;
+  height: 100vh;
+  list-style-type: none;
   overflow: hidden;
+  padding-left: 0px;
 }
-.mainContainerImage>div {
+.mainContainerImage>li {
   width: 200px;
   margin: 10px 10px 0px 10px;
   position: relative;
 }
-.mainContainerImage>div>img {
+.mainContainerImage>li>img {
   width: 100%;
 }
-.mainContainerImage>div>div {
+.mainContainerImage>li>div {
   z-index: 2;
   text-align: right;
 }
@@ -147,7 +149,7 @@ nav ul>li:nth-of-type(1)>a {
 .streetTitre>div {
   position: absolute;
   bottom: 140px;
-  width: 186px;
+  width: 190px;
   background-color: #de7e00;
 }
 .architectTitre>div {
@@ -164,13 +166,13 @@ nav ul>li:nth-of-type(1)>a {
   width: 240px;
   background-color: #271350;
 }
-.mainContainerImage>div>div>p {
+.mainContainerImage>li>div>p {
   color: #fff;
   font-size: 2em;
   padding: 20px;
   margin: 0;
 }
-.mainContainerImage>div>div>p:hover {
+.mainContainerImage>li>div>p:hover {
   color: #898e90;
   cursor: pointer;
 }
@@ -238,13 +240,11 @@ nav ul>li:nth-of-type(1)>a {
   position: relative;
 }
 .updiv i {
-  /* width: 30px; */
   height: 30px;
   background-color: #00ff00;
   border-radius: 50%;
   padding: 7px 12px;
   position: absolute;
-  /* right: 0px; */
   bottom: 0;
 }
 .updiv .fa {
