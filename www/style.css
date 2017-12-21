@@ -11,7 +11,7 @@ body {
   letter-spacing: 2px;
 }
 .container {
-  max-width: 80%;
+  max-width: 78%;
   margin: 0 auto;
 }
 *img {
@@ -54,14 +54,14 @@ header div:nth-of-type(3)>img {
 nav {
   margin: 0 auto;
 }
-nav ul {
+.mainTopNav {
   list-style-type: none;
   display: flex;
   padding-left: 3px;
   position: relative;
   margin-bottom: 5px;
 }
-nav ul li a {
+.mainTopNav li a {
   background-color: #252728;
   color: #898e90;
   cursor: pointer;
@@ -73,16 +73,16 @@ nav ul li a {
   text-align: center;
   text-decoration: none;
 }
-nav ul li a:hover {
+.mainTopNav li a:hover {
   color: #fff;
 }
-nav ul li .navSecondRow {
+.mainTopNav li .navSecondRow {
   display: none;
 }
-nav ul li .navSecondRow a {
+.mainTopNav li .navSecondRow a {
   padding: 3px 0px;
 }
-nav ul li:hover .navSecondRow {
+.mainTopNav li:hover .navSecondRow {
   display: flex;
   flex-direction: column;
   z-index: 10;
@@ -90,7 +90,7 @@ nav ul li:hover .navSecondRow {
   padding-left: 0px;
   position: absolute;
 }
-nav ul>li:nth-of-type(1)>a {
+.mainTopNav>li:nth-of-type(1)>a {
   color: #fff !important;
 }
 
@@ -105,20 +105,22 @@ nav ul>li:nth-of-type(1)>a {
 .mainContainerImage {/* ------------------- ul */
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 99vh;
   list-style-type: none;
+  margin: 0px;
   overflow: hidden;
   padding-left: 0px;
 }
-.mainContainerImage>li {
+/* .mainContainerImage>li { */
+li[class$=Titre] {
   width: 200px;
   margin: 10px 10px 0px 10px;
   position: relative;
 }
-.mainContainerImage>li>img {
+.mainContainerImage img {
   width: 100%;
 }
-.mainContainerImage>li>div {
+.mainContainerImage p {
   z-index: 2;
   text-align: right;
 }
@@ -132,47 +134,48 @@ nav ul>li:nth-of-type(1)>a {
   position: relative;
   top: 40px;
 }
-.natureTitre>div {
+.colorNature {
+  display: block;
   position: absolute;
   top: 0;
   left: 100px;
-  width: 220px;
+  width: 200px;
   background-color: #177507;
 }
-.paysageTitre>div {
+.colorPaysage {
   position: absolute;
   bottom: 4px;
   left: 60px;
-  width: 220px;
+  width: 180px;
   background-color: #335676;
 }
-.streetTitre>div {
+.colorStreet {
   position: absolute;
-  bottom: 140px;
-  width: 190px;
+  bottom: 120px;
+  width: 146px;
   background-color: #de7e00;
 }
-.architectTitre>div {
+.colorArchitect {
   position: absolute;
   bottom: 39px;
   right: 40px;
-  width: 220px;
+  width: 180px;
   background-color: #153350;
 }
-.objetTitre>div {
+.colorObjet {
   position: absolute;
   top: 0;
   right: 0;
-  width: 240px;
+  width: 220px;
   background-color: #271350;
 }
-.mainContainerImage>li>div>p {
+.mainContainerImage p {
   color: #fff;
   font-size: 2em;
   padding: 20px;
   margin: 0;
 }
-.mainContainerImage>li>div>p:hover {
+.mainContainerImage p:hover {
   color: #898e90;
   cursor: pointer;
 }
